@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "Annoying Alarm",
+  "description": "This extension alarms every 10 seconds",
+  "version": "1.0",
+
+  "permissions": [
+    "alarms"
+  ],
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+
+  "browser_action": {
+    "default_icon": "alarm.png",
+    "default_popup": "popup.html"
+  }
+}
